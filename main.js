@@ -1,16 +1,11 @@
 const addAnimations = () => {
-    const about = document.getElementById('about');
-    const service = document.getElementById('service');
-    const blog = document.getElementById('blog');
-    const merch = document.getElementById('merch');
+    const home = document.getElementById('sec');
+    // const service = document.getElementById('service');
+    // const blog = document.getElementById('blog');
+    // const merch = document.getElementById('merch');
 
-    const triggerbottom = window.innerHeight / 5 * 4;
-    if (home.getBoundingClientRect().top < triggerbottom) {
         // console.log("reached");
         home.classList.add("active");
-    } else {
-        home.classList.remove("active");
-    }
 
     // if (service.getBoundingClientRect().top < triggerbottom) {
     //     // console.log("reached");
@@ -41,4 +36,4 @@ const addAnimations = () => {
 //     ulpop.classList.toggle("active")
 // }
 // menuBtn.addEventListener("click", togglemenu);
-window.addEventListener('scroll', addAnimations);
+window.addEventListener('load', addAnimations);
