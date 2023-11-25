@@ -100,17 +100,16 @@ section {
     display: flex;
     justify-content: center;
     padding: 0em 2em;
+    padding-bottom: 2em;
 }
 
 section .box {
-    width: 70%;
+    width: 90%;
     height: auto;
     padding: 1em 2em;
-    /* box-shadow: 0px 0px 5px 0px rgba(225, 225, 225, 0.7); */
-    border-radius: 10px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
     justify-content: flex-start;
     font-family: 'DM Sans', sans-serif;
     color: var(--text);
@@ -124,31 +123,21 @@ section.active .box {
     transform: translateY(0%);
 }
 
-section .box h4 {
+section .box h1 {
+    font-size: 4em;
+}
+
+section .box h2{
+    font-size: 2em;
     margin-top: 0.5em;
 }
 
-section .box ul {
-    margin-top: 1em;
-}
-
-section .box ul li {
+section .box p {
+    margin-bottom: 1em;
+    font-size: 1.2em;
+    line-height: 25px;
     color: var(--primary);
-    margin-top: 1em;
 }
-
-section .box ul li span {
-    font-family: 'Poppins';
-    font-weight: 600;
-    color: var(--text);
-    margin-right: 0.7em;
-}
-
-section img {
-    object-fit: cover;
-    width: 50%;
-}
-
 
 @keyframes spin {
     0% {
@@ -183,16 +172,20 @@ section img {
 
     section {
         padding: 2em 1em;
-        gap: 4em 1em;
+        gap: 2em 1em;
     }
-
     section .box {
         width: 100%;
-        font-size: 0.9em;
+        font-size: 1em;
+        padding: 1em 0em;
     }
-    section img {
-        object-fit: cover;
-        width: 100%;
-    }
+
+section .box h2 {
+    font-size: 1.4em;
+}
+section .box p {
+    font-size: 1em;
+}
+
 
 }
