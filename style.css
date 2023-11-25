@@ -20,6 +20,23 @@
 
   body {
       background-color: var(--bg);
+      -ms-overflow-style: none;
+      /* IE and Edge */
+      scrollbar-width: none;
+      /* Firefox */
+  }
+
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  body::-webkit-scrollbar {
+      display: none;
+  }
+
+  #particles-js {
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      top: 0%;
+      left: 0%;
   }
 
   .container {
@@ -33,17 +50,44 @@
       width: 100%;
       height: auto;
       display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
-      padding: 1em 4em;
-      overflow: hidden;
+      padding: 2em 4em;
+      /* overflow: hidden; */
   }
 
   .container header img {
-      object-fit: cover;
+      object-fit: contain;
       width: 40%;
       height: 400px;
       animation: spin 5s infinite alternate-reverse;
+  }
+
+  .container header h1 {
+      text-align: center;
+      color: var(--text);
+      font-family: 'DM Sans', sans-serif;
+  }
+
+  .container header ul {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 4em;
+      padding: 2em 1em;
+  }
+
+  .container header ul li a {
+      color: var(--text);
+      font-size: 2em;
+      transition: 500ms ease-in-out;
+      display: block;
+  }
+
+  .container header ul li a:hover {
+      color: var(--primary);
+      transform: scale(1.1);
   }
 
   /**************SESSIONS******************/
@@ -72,21 +116,14 @@
       transition: transform 2s ease-in-out;
       transform-origin: bottom;
   }
-  section .box:nth-of-type(even){
-    transform: translate(50%, -20%);
+
+  section .box:nth-of-type(even) {
+      transform: translate(50%, -20%);
   }
+
   section.active .box {
       transition-delay: calc(.2s * var(--i));
       transform: translate(0%, 0%);
-  }
-
-
-  #particles-js {
-      position: fixed;
-      width: 100%;
-      height: 100vh;
-      top: 0%;
-      left: 0%;
   }
 
   @keyframes spin {
@@ -119,6 +156,7 @@
           width: 100%;
           height: auto;
       }
+
       section {
           padding: 2em 1em;
           gap: 4em 1em;
