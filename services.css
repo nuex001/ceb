@@ -14,8 +14,8 @@ html {
 
 :root {
     --bg: #000000;
-    --text: #fff;
-    --primary: #808080;
+    --text: yellow;
+    --primary: #fff;
 }
 
 body {
