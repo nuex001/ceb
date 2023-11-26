@@ -143,6 +143,11 @@ section .box h2 {
     font-size: 4em;
 }
 
+section .box h3 {
+    font-size: 3em;
+    margin-bottom: -10px;
+}
+
 section .box p {
     margin-top: 1em;
     font-size: 1.2em;
