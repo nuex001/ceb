@@ -144,6 +144,14 @@ section .box ul li span {
     margin-right: 0.7em;
 }
 
+section .box ul li a {
+    color: var(--primary);
+}
+
+section .box ul li a:hover{
+    color: var(--text);
+}
+
 section img {
     object-fit: cover;
     width: 50%;
