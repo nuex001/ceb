@@ -154,16 +154,6 @@ section .box p {
     line-height: 25px;
     color: var(--primary);
 }
-section .box .display{
-  display: flex;
-  gap: 2em;
-  align-items: center;
-}
-section .box .display img{
-    object-fit: contain;
-    width: 300px;
-    border-radius: 5px;
-}
 
 @keyframes spin {
     0% {
@@ -212,9 +202,4 @@ section .box .display img{
         font-size: 1em;
         padding: 1em 0em;
     }
-    section .box .display{
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-      }
 }

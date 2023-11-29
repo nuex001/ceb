@@ -141,6 +141,16 @@ section .box p {
 section .box img {
     margin-bottom: 1em;
 }
+section .box .display{
+    display: flex;
+    gap: 2em;
+    align-items: center;
+  }
+  section .box .display img{
+      object-fit: contain;
+      width: 300px;
+      border-radius: 5px;
+  }
 
 @keyframes spin {
     0% {
@@ -189,6 +199,10 @@ section .box h2 {
 section .box p {
     font-size: 1em;
 }
-
+section .box .display{
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
 
 }
