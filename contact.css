@@ -64,17 +64,20 @@ body::-webkit-scrollbar {
     height: 400px;
     animation: spin 5s infinite alternate-reverse;
 }
-
 .container header h1 {
+    display: flex;
+    align-items: center;
+    gap: 0.2em;
     text-align: center;
     color: var(--primary);
-    font-family: 'poppins';
     margin-top: 1em;
+    font-family: monospace;
 }
 
 .container header h1 a {
     color: var(--text);
     font-size: 1.2em;
+    font-family: 'poppins';
 }
 
 .container header ul {

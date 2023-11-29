@@ -67,7 +67,9 @@
   .container header h1 {
       text-align: center;
       color: var(--text);
-      font-family: 'DM Sans', sans-serif;
+      /* font-family: 'DM Sans', sans-serif; */
+      font-family: monospace;
+
   }
 
   .container header ul {
