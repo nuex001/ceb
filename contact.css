@@ -15,7 +15,7 @@ html {
 :root {
     --bg: #000000;
     --text: #fff;
-    --primary: #fff;
+    --primary: #D3D3D3;
 }
 
 body {
@@ -64,20 +64,25 @@ body::-webkit-scrollbar {
     height: 400px;
     animation: spin 5s infinite alternate-reverse;
 }
+
 .container header h1 {
     display: flex;
     align-items: center;
-    gap: 0.2em;
-    text-align: center;
-    color: var(--primary);
+    gap: 0.2em 0.5em;
     margin-top: 1em;
     font-family: monospace;
+    color: var(--text);
 }
 
 .container header h1 a {
-    color: var(--text);
     font-size: 1.2em;
     font-family: 'poppins';
+    color: var(--text);
+}
+
+.container header h1 i {
+    font-size: 0.5em;
+    color: var(--primary);
 }
 
 .container header ul {
@@ -101,12 +106,18 @@ section {
     width: 100%;
     height: auto;
     display: flex;
+    align-items: center;
     justify-content: center;
-    padding: 0em 2em;
+    padding: 1em 2em;
+}
+
+section img {
+    object-fit: cover;
+    width: 50%;
 }
 
 section .box {
-    width: 70%;
+    width: 40%;
     height: auto;
     padding: 1em 2em;
     /* box-shadow: 0px 0px 5px 0px rgba(225, 225, 225, 0.7); */
@@ -127,7 +138,8 @@ section.active .box {
     transform: translateY(0%);
 }
 
-section .box h4 {
+section .box h1 {
+    font-size: 3em;
     margin-top: 0.5em;
 }
 
@@ -138,6 +150,7 @@ section .box ul {
 section .box ul li {
     color: var(--primary);
     margin-top: 1em;
+    font-size: 2em;
 }
 
 section .box ul li span {
@@ -151,13 +164,9 @@ section .box ul li a {
     color: var(--primary);
 }
 
-section .box ul li a:hover{
+section .box ul li a:hover {
     color: var(--text);
-}
-
-section img {
-    object-fit: cover;
-    width: 50%;
+    text-decoration: underline;
 }
 
 
@@ -194,16 +203,26 @@ section img {
 
     section {
         padding: 2em 1em;
-        gap: 4em 1em;
+        gap: 2em 1em;
+        flex-direction: column;
     }
 
     section .box {
         width: 100%;
         font-size: 0.9em;
     }
+
     section img {
         object-fit: cover;
         width: 100%;
+    }
+
+    section .box h1 {
+        font-size: 1.6em;
+    }
+
+    section .box ul li {
+        font-size: 1em;
     }
 
 }
