@@ -95,7 +95,7 @@ body::-webkit-scrollbar {
 
 .container header ul li a {
     color: var(--text);
-    font-size: 2em;
+    font-size: 1.6em;
     transition: 500ms ease-in-out;
     display: block;
 }
@@ -144,6 +144,8 @@ section .box h1 {
 }
 
 section .box ul {
+    display: flex;
+    gap: 4em;
     margin-top: 1em;
 }
 
@@ -222,7 +224,7 @@ section .box ul li a:hover {
     }
 
     section .box ul li {
-        font-size: 1em;
+        font-size: 2em;
     }
 
 }

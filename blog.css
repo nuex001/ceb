@@ -124,6 +124,7 @@ section .box {
     transform: translateY(30%);
     transition: transform 2s ease-in-out;
     transform-origin: bottom;
+    text-align: center;
 }
 
 section.active .box {

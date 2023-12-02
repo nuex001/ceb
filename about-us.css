@@ -149,11 +149,13 @@ section.active .box {
 
 section .box h2 {
     font-size: 4em;
+    text-align: center;
 }
 
 section .box h3 {
     font-size: 3em;
     margin-bottom: -10px;
+    text-align: center;
 }
 
 section .box p {
