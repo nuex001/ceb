@@ -145,16 +145,23 @@ section .box h1 {
 
 section .box ul {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 4em;
     margin-top: 1em;
 }
 
-section .box ul li {
-    color: var(--primary);
+section .box ul li{
+    background: linear-gradient(to right, #808080, white);
+    padding: 0.5em 1em;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'DM Sans', sans-serif;
     margin-top: 1em;
     font-size: 2em;
 }
-
 section .box ul li span {
     font-family: 'Poppins';
     font-weight: 600;
@@ -163,7 +170,7 @@ section .box ul li span {
 }
 
 section .box ul li a {
-    color: var(--primary);
+    color: var(--text);
 }
 
 section .box ul li a:hover {
@@ -223,6 +230,9 @@ section .box ul li a:hover {
         font-size: 1.6em;
     }
 
+    section .box ul {
+        width: 100%;
+    }
     section .box ul li {
         font-size: 2em;
     }
