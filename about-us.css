@@ -113,12 +113,13 @@ section {
 
 section img {
     object-fit: cover;
-    width: 50%;
+    width: 90%;
     /* height: 500px; */
     transform: translateY(30%);
     transition: transform 2s ease-in-out;
     transform-origin: bottom;
     border-radius: 1em;
+    margin: 1em auto;
 }
 
 section.active img {
@@ -128,7 +129,7 @@ section.active img {
 
 
 section .box {
-    width: 50%;
+    width: 70%;
     height: auto;
     padding: 1em 2em;
     display: flex;
@@ -212,5 +213,6 @@ section .box p {
         width: 100%;
         font-size: 1em;
         padding: 1em 0em;
+        /* text-align: center; */
     }
 }

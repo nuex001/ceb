@@ -154,19 +154,18 @@ section .box ul li a{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     color: var(--text);
     gap: 1em;
+    /* gap: 0.5em; */
+    text-transform: uppercase;
+    padding: 1em 2em;
+    background: linear-gradient(to right, #808080, white);
+    border-radius: 10px;
 }
 section .box ul li a i{
-    background: linear-gradient(to right, #808080, white);
-    padding: 1em 2em;
-    border-radius: 10px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin-top: 1em;
-    gap: 0.5em;
-
 }
 
 section .box ul li a:hover {
@@ -223,6 +222,7 @@ section .box ul li a:hover {
 
     section .box h1 {
         font-size: 1.6em;
+        margin-bottom: 1em;
     }
 
     section .box ul {

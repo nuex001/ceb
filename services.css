@@ -112,7 +112,7 @@ section {
 }
 
 section .box {
-    width: 90%;
+    width: 70%;
     height: auto;
     padding: 1em 2em;
     display: flex;
