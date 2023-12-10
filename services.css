@@ -147,6 +147,7 @@ section .box p {
     font-size: 1.2em;
     line-height: 25px;
     color: var(--primary);
+    text-align: center;
 }
 
 section .box img {
