@@ -184,7 +184,10 @@ section .box:hover p {
         width: 100%;
         height: auto;
     }
-
+    .container header h1:last-child{
+        font-size: 4em;
+        margin-top: 0em;
+    }
     section {
         padding: 2em 1em;
         gap: 2em 1em;
